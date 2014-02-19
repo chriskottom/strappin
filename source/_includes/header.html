@@ -1,1 +1,4 @@
-{% include custom/header.html %}
+<h1 class="blog-title"><a href="{{ root_url }}/">{{ site.title }}</a></h1>
+{% if site.subtitle %}
+<h2 class="lead blog-description">{{ site.subtitle }}</h2>
+{% endif %}

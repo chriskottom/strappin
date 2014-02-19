@@ -10,11 +10,14 @@
     </div>
   </div>
 
-  <header role="banner">{% include header.html %}</header>
-  <div id="main">
-    <div id="content">
+  <div class="container">
+    <header role="banner" class="blog-header">
+      {% include header.html %}
+    </header>
+
+    <section id="main" class="blog-main row">
       {{ content | expand_urls: root_url }}
-    </div>
+    </section>
   </div>
 
   <footer role="contentinfo" class="blog-footer">
