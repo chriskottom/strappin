@@ -1,7 +1,6 @@
 @import "compass";
 @include global-reset;
 
-$icon-font-path: "fonts/bootstrap/";
-
 @import "bootstrap";
+@import "strappin";
 @import "custom/styles";
