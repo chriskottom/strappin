@@ -16,7 +16,10 @@
       {{ content | expand_urls: root_url }}
     </div>
   </div>
-  <footer role="contentinfo">{% include footer.html %}</footer>
+
+  <footer role="contentinfo" class="blog-footer">
+    {% include footer.html %}
+  </footer>
   {% include after_footer.html %}
 </body>
 </html>
