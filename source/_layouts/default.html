@@ -20,9 +20,12 @@
     </section>
   </div>
 
+  {% unless page.footer == false %}
   <footer role="contentinfo" class="blog-footer">
     {% include footer.html %}
   </footer>
+  {% endunless %}
+
   {% include after_footer.html %}
 </body>
 </html>
