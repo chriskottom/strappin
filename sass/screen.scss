@@ -1,6 +1,7 @@
 @import "compass";
 @include global-reset;
 
+@import "variables";
 @import "bootstrap";
 @import "strappin";
 @import "custom/styles";
