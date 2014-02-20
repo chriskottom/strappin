@@ -1,5 +1,5 @@
 /*
- * Global Styles
+ *  Global Styles
  */
 
 body {
@@ -15,11 +15,6 @@ h4, .h4, h5, .h5, h6, .h6 {
   color: $header-color;
 }
 
-
-/*
- * Override Bootstrap's default container.
- */
-
 @media (min-width: 1200px) {
   .container {
     width: $container-width;
@@ -28,7 +23,7 @@ h4, .h4, h5, .h5, h6, .h6 {
 
 
 /*
- * Masthead for nav
+ *  Blog Layout and Elements
  */
 
 .blog-masthead {
@@ -37,7 +32,6 @@ h4, .h4, h5, .h5, h6, .h6 {
   font-size: 16px;
 }
 
-/* Nav links */
 .blog-nav-item {
   color: $navbar-text-color;
   display: inline-block;
@@ -92,7 +86,6 @@ h4, .h4, h5, .h5, h6, .h6 {
   @extend .col-sm-8;
 }
 
-/* Sidebar modules for boxing content */
 .blog-post {
   margin-bottom: 60px;
 
@@ -104,6 +97,11 @@ h4, .h4, h5, .h5, h6, .h6 {
   .blog-post-meta {
     color: $meta-text-color;
     margin-bottom: 20px;
+  }
+
+  * {
+    position: relative;
+    max-width: 100%;
   }
 }
 
