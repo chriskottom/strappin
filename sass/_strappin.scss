@@ -84,24 +84,52 @@ h4, .h4, h5, .h5, h6, .h6 {
   font-size: 18px;
   line-height: 1.5;
   @extend .col-sm-8;
+
+  &.full {
+    @extend .col-sm-12;
+  }
+
+  .blog-post, .blog-page {
+    margin-bottom: 60px;
+
+    .blog-post-title, .blog-page-title {
+      font-size: 40px;
+      margin-bottom: 5px;
+    }
+
+    .blog-post-meta, .blog-page-meta {
+      color: $meta-text-color;
+      margin-bottom: 20px;
+    }
+
+    * {
+      position: relative;
+      max-width: 100%;
+    }
+  }
 }
 
-.blog-post {
-  margin-bottom: 60px;
+.blog-archives {
+  .year-archive {
+    margin-top: 25px;
 
-  .blog-post-title {
-    font-size: 40px;
-    margin-bottom: 5px;
-  }
+    h2 {
+      font-size: 24px;
+    }
 
-  .blog-post-meta {
-    color: $meta-text-color;
-    margin-bottom: 20px;
-  }
+    .blog-post {
+      margin-bottom: 10px;
 
-  * {
-    position: relative;
-    max-width: 100%;
+      h3 {
+	font-size: 20px;
+	margin-bottom: 3px;
+      }
+
+      .blog-post-meta {
+	color: $meta-text-color;
+	margin-bottom: 20px;
+      }
+    }
   }
 }
 
@@ -110,6 +138,10 @@ h4, .h4, h5, .h5, h6, .h6 {
 
   .sidebar-module, .sidebar-module-inset {
     margin: -15px -15px 30px;
+
+    p, li {
+      margin-bottom: 5px;
+    }
 
     p:last-child,
     ul:last-child,
